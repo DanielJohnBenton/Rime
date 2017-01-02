@@ -364,6 +364,7 @@ for(let iTesting = 0, cTesting = testingSet.length; iTesting < cTesting; iTestin
 	Log("---", "'"+ word1 +"' rhymes with '"+ word2 +"' ?", answer);
 }
 
+// Force exit as it sometimes hangs here
 process.exit();
 
 

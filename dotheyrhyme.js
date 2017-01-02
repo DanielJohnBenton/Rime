@@ -138,4 +138,5 @@ else
 
 Log("");
 
+// Force exit in case it hangs here
 process.exit();
