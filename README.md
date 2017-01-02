@@ -6,6 +6,7 @@ The network is a simple three-layer perceptron.
 * **781** input neurons (15 letters x 2 words x 26 letters + 1 bias)
 * **20** hidden neurons in 1 layer
 * **2** output neurons (rhyming/not rhyming classification)
+
 I wish to experiment with deeper layers as this may aid the pattern recognition.
 
 ## Data
@@ -13,7 +14,9 @@ It's hard to find a set of rhyming words for input. I ended up creating a tiny o
 
 ## Training
 The training was performed in many small chunks, and the neural network was saved to a file whenever an improvement in the accuracy occurred.
+
 The accuracy on the training data was around **92.5%** on the last run. At this point the rate of improvement had diminished enormously.
+
 This training and testing was done using a set of some four-thousand or so rhyming and non-rhyming word pairs created from the dataset 'rhymelist.txt'.
 
 ## Use
