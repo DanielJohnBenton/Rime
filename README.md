@@ -64,5 +64,10 @@ PS D:\code\rime\14> node dotheyrhyme people throughout
 NOPE - I think that 'PEOPLE' does not rhyme with 'THROUGHOUT'.
 ```
 
+## Technology
+* Language: JavaScript
+* Environment: Node.js
+* Libraries: [Synaptic](https://github.com/cazala/synaptic)
+
 ## Acknowledgements
 Neural network built and trained using [Synaptic by Cazala](https://github.com/cazala/synaptic).
