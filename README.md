@@ -7,7 +7,7 @@ The network is a simple three-layer perceptron.
 * **20** hidden neurons in 1 layer
 * **2** output neurons (rhyming/not rhyming classification)
 
-I wish to experiment with deeper layers as this may aid the pattern recognition.
+I wish to experiment using more hidden layers as this may aid the pattern recognition.
 
 ## Data
 It's hard to find a set of rhyming words for input. I ended up creating a tiny one myself, by typing up some rhyming words. I think it would work better with a much larger dataset if I can find or create one. The neural network understands specific rhyming patterns it has been taught but does not really get the concept of 'rhyming' so it will not say that e.g. ["HOUSE", "MOUSE"] rhyme unless similar rhyming words exist in the training data.
