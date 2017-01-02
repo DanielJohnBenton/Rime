@@ -315,7 +315,9 @@ for(let i = 1; i <= 20000; i++)
 		
 		if(bestAccuracy >= 100)
 		{
-			Log("Finished.");
+			Log("Finishing with 100% accuracy!");
+			
+			break;
 		}
 	}
 	else if(i % 500 == 0)
@@ -324,40 +326,7 @@ for(let i = 1; i <= 20000; i++)
 	}
 }
 
-// A meagre testing set to demonstrate whether the output is somewhat sensible.
-let testingSet = [
-	["HOBBY", "LOBBY"],
-	["COOL", "TOOL"],
-	["HOUSE", "MOUSE"],
-	["PEOPLE", "STEEPLE"],
-	["SIGHT", "FIGHT"],
-	["SIGHT", "SITE"],
-	["SAUSAGE", "POTATO"],
-	["FRENCH", "GHOST"],
-	["HOUSE", "CHRISTMAS"],
-	["CHINA", "CHINESE"]
-];
-
-for(let iTesting = 0, cTesting = testingSet.length; iTesting < cTesting; iTesting++)
-{
-	let word1 = testingSet[iTesting][0];
-	let word2 = testingSet[iTesting][1];
-	
-	let answers = rime.activate(EncodePair(word1, word2));
-	
-	let answer = "";
-	
-	if(answers[0] > answers[1])
-	{
-		answer = "YES! ("+ Math.round((answers[0] * 100) - (answers[1] * 100)) +" % sure)";
-	}
-	else
-	{
-		answer = "NOPE ("+ Math.round((answers[1] * 100) - (answers[0] * 100)) +" % sure)";
-	}
-	
-	Log("---", "'"+ word1 +"' rhymes with '"+ word2 +"' ?", answer);
-}
+Log("Training ends.");
 
 // Force exit as it sometimes hangs here
 process.exit();
