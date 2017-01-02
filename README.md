@@ -14,6 +14,7 @@ It's hard to find a set of rhyming words for input. I ended up creating a tiny o
 ## Training
 The training was performed in many small chunks, and the neural network was saved to a file whenever an improvement in the accuracy occurred.
 The accuracy on the training data was around **92.5%** on the last run. At this point the rate of improvement had diminished enormously.
+This training and testing was done using a set of some four-thousand or so rhyming and non-rhyming word pairs created from the dataset 'rhymelist.txt'.
 
 ## Use
 Use of the 'dotheyrhyme' script looks like this:
