@@ -105,11 +105,6 @@ function EncodePair(word1, word2)
 {
 	let code = EncodeWord(word1).concat(EncodeWord(word2));
 	
-	while(code.length < 780)
-	{
-		code.push(0);
-	}
-	
 	code.push(1);
 	
 	return code;
