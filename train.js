@@ -182,7 +182,7 @@ function UniqueRandom(min, max, count)
 
 Log("Assembling training data.");
 
-let lines = fs.readFileSync("rhymelist.txt", "utf8").toString().toUpperCase().split("\r\n");
+let lines = fs.readFileSync("rhymelist.txt", "utf8").toString().toUpperCase().split("\n");
 let words = [];
 for(let iLines = 0, c = lines.length; iLines < c; iLines++)
 {
@@ -271,20 +271,13 @@ let bestAccuracy = 0;
 // Run many short training sessions using small chunks of the training data. Due to the input size, anything much larger at time breaks JS! :^(
 for(let i = 1; i <= 20000; i++)
 {
-	let trainingSet = [];
-	let xTrainingSet = UniqueRandom(0, trainingData.length - 1, 15);
-	for(let iTrainingSet = 0, c = xTrainingSet.length; iTrainingSet < c; iTrainingSet++)
-	{
-		trainingSet.push(trainingData[xTrainingSet[iTrainingSet]]);
-	}
-
 	let trainer = new Trainer(rime);
-	trainer.train(trainingSet, {
-		rate: .2,
-		iterations: 10,
-		error: .0001,
+	trainer.train(trainingData, {
+		rate: [0.2, 0.1, 0.05, 0.025, 0.005],
+		iterations: 200,
+		error: .00000001,
 		shuffle: true,
-		log: 0,
+		log: 5,
 		cost: Trainer.cost.MSE
 	});
 	
