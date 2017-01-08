@@ -77,7 +77,7 @@ NOPE - I think that 'CHINESE' does not rhyme with 'LANTERNS'.
 ## Failures
 Rime was good at memorising pairs from the training set, but didn't appear to very well understand the concept of rhyming.
 
-While there were some pleasant surprises when trying non-training data, there were also plenty of unsuccessful classifications. The most embarrassing of these, are classifications of clearly non-rhyming words as rhyming words.
+While there were some pleasant surprises when trying non-training data, there were also plenty of unsuccessful classifications. Among the most embarrassing of these are classifications of clearly non-rhyming words as rhyming words.
 
 ```
 PS D:\code\rime> node dotheyrhyme range strange
