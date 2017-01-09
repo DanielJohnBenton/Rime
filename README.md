@@ -105,6 +105,7 @@ What might help with these issues:
 * Language: JavaScript
 * Environment: Node.js
 * Libraries: [Synaptic](https://github.com/cazala/synaptic)
+* Graph: Microsoft Excel
 
 ## Acknowledgements
 Neural network built and trained using [Synaptic by Cazala](https://github.com/cazala/synaptic).
