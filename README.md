@@ -109,3 +109,6 @@ What might help with these issues:
 
 ## Acknowledgements
 Neural network built and trained using [Synaptic by Cazala](https://github.com/cazala/synaptic).
+
+## Update
+I experimented some more with various settings and network constructions. Using a network with `781 input --> 5 hidden --> 5 hidden --> 2 output`, I was able to achieve **100%** accuracy on the training set with some consistency. There was a noticeable improvement in classifying non-rhyming word pairs. However, this does not really improve the results classifying non-training rhyming word pairs - it is still apparently just memorising the training data. A better training data set could make this a much less noticeable issue.
